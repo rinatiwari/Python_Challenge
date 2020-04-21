@@ -43,4 +43,4 @@ for pie_index in range(len(pie_list)):
 
    # Gather the count of each pie in the pie list and print them alongside the pies
    print(pie_count + " " + pie_name)
-print("You purchased total"+ str(totalpurchase)+".")
+print("You purchased total"+" "+ str(totalpurchase)+".")
