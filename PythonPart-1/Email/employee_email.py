@@ -23,7 +23,14 @@ with open(filepath) as csvfile:
         last_name=row["last_name"]
         ssn=row["ssn"]
         email=f"{first_name}.{last_name}@example.com"
-        new_employee_data.append({first_name:row["first_name"],last_name:row["last_name"],ssn:row["ssn"],email:email})
+        new_employee_data.append(
+            {
+                "first_name": row["first_name"],
+                "last_name": row["last_name"],
+                "ssn": row["ssn"],
+                "email": email
+            }
+        )
         
 # Grab the filename from the original path
 _, filename = os.path.split(filepath)
